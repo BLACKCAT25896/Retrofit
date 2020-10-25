@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <Button
+       android:layout_alignParentBottom="true"
+       android:layout_width="wrap_content"
+       android:layout_centerInParent="true"
+       android:layout_margin="10dp"
+       android:paddingBottom="10dp"
+       android:paddingTop="10dp"
+       android:paddingLeft="40dp"
+       android:paddingRight="40dp"
+       android:backgroundTint="@android:color/background_dark"
+       android:textColor="@android:color/white"
+       android:textSize="24dp"
+       android:textAllCaps="false"
+       android:text="Insert Data"
+       android:layout_height="wrap_content"
+       android:onClick="insertData"/>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/userRecyclearview"/>
+
+   <ProgressBar
+       android:id="@+id/progressBar"
+       style="?android:attr/progressBarStyle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"/>
+
+</RelativeLayout>
